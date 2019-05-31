@@ -1,0 +1,48 @@
+  {
+    "name": "Solidus Example App",
+    "description": "A demonstration store using Solidus with some test data.",
+    "website": "https://solidus.io/",
+    "repository": "https://github.com/solidusio/solidus-example-app",
+    "logo": "https://solidus.io/assets/images/favicon/favicon.ico",
+    "keywords": [
+      "solidus",
+      "example",
+      "rails",
+      "ecommerce",
+      "ruby",
+      "spree",
+      "cart",
+      "store"
+    ],
+    "addons": [
+      "heroku-postgresql:hobby-dev",
+      "memcachier:dev",
+      "cloudinary:starter"
+    ],
+    "scripts": {
+      "postdeploy": "bin/rails db:migrate && bin/rails db:seed spree_sample:load"
+    },
+    "env": {
+      "ADMIN_EMAIL": {
+        "description": "We will create an admin user with this email.",
+        "value": "admin@example.com"
+      },
+      "ADMIN_PASSWORD": {
+        "description": "We will create an admin user with this password.",
+        "value": "test123"
+      },
+      "DEVISE_SECRET_KEY": {
+        "description": "A secret key for salting user passwords.",
+        "generator": "secret"
+      },
+      "RAILS_LOG_TO_STDOUT": {
+        "value": "true"
+      },
+      "RAILS_SERVE_STATIC_FILES": {
+        "value": "true"
+      },
+      "SECRET_KEY_BASE": {
+        "generator": "secret"
+      }
+    }
+  }
