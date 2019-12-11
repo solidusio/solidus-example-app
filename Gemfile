@@ -68,5 +68,3 @@ group :heroku do
   gem 'cloudinary', '~> 1.11'
   gem 'paperclip-cloudinary'
 end
-
-gem 'solidus_i18n', '~> 2.0'
