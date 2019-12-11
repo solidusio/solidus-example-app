@@ -25,3 +25,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# It is `bin/rails spree_sample:load`
+/public/spree
