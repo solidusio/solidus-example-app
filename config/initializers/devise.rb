@@ -1,0 +1,1 @@
+Devise.secret_key = ENV['DEVISE_SECRET_KEY'] || "0225d4ecb45dfd3b3b306050f867ec3dbed766f1bd4ae13f7e49299c05213b93c56eef52d47be6cdc5c887821bf4f5e159f3"
