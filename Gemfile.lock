@@ -203,7 +203,7 @@ GEM
     pg (1.2.3)
     polyglot (0.3.5)
     public_suffix (4.0.6)
-    puma (4.3.6)
+    puma (4.3.8)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -409,7 +409,7 @@ DEPENDENCIES
   listen (~> 3.2)
   paperclip-cloudinary
   pg (>= 0.18, < 2.0)
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.3, >= 6.0.3.6)
   rails_12factor
   sass-rails (>= 6)
